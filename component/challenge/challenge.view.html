@@ -1,0 +1,42 @@
+<section class="section">
+    <h1>Challenge</h1>
+    <div class="columns">
+        <div class="column">
+            create a function <strong>toThePowerOfTwo</strong> that returns the input byt the power of 2.
+        </div>
+        <div class="column">
+            <form id="submitCode">
+                <label for="code" class="label">Your solution</label>
+                <textarea id="code" name="code">
+                    function toThePowerOfTwo(inp){
+                        alert('here');
+                    }
+                </textarea>
+                <button class="button">test</button>
+            </form>
+            <script>
+                let editor;
+                setTimeout(()=>{
+                    const myTextarea = document.getElementById('code');
+                    editor = CodeMirror.fromTextArea(myTextarea, {
+                        lineNumbers: true,
+                        mode: "javascript"
+                    });
+
+                },1000)
+
+                document.getElementById('submitCode')
+                    .addEventListener('submit', ev => {
+                        ev.preventDefault();
+                        editor.save();
+                        console.log(document.getElementById('code').value);
+                        console.log(editor);
+                    })
+            </script>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2 class="subtitle">Evaluation</h2>
+</section>
