@@ -1,4 +1,4 @@
-# codingGround live dev project @twitch.th/neoan3
+# codingGround live dev project @twitch.tv/neoan3
 
 ## prerequisites
 
